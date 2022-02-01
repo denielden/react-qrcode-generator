@@ -4,10 +4,9 @@ import reactLogo from '../img/react-logo.svg';
 import qrIcon from '../img/qr-icon.svg';
 
 const FormQr = props => {
-
    const downloadQRCode = e => {
       e.preventDefault();
-   
+
       const qrCanvas = props.qrRef.current.querySelector('canvas'),
             qrImage = qrCanvas.toDataURL("image/png"),
             qrAnchor = document.createElement('a'),
