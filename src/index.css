@@ -1,13 +1,81 @@
-body {
+:root {
+  --white: hsl(0, 0%, 100%);
+  --gray: hsl(212, 45%, 89%);
+  --blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --rgba-darkblue: rgba(31, 50, 81, .35);
+}
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: calc(100vh - 2rem);
+  padding: 1rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  background: var(--gray);
+  color: var(--blue);
+}
+h1, a {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+.attribution {
+  display: block;
+  position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	background-image: url('https://avatars.githubusercontent.com/u/75424016?v=4');
+  background-size: 100%;
+	height: 4rem;
+	width: 4rem;
+	border-radius:100%;
+	z-index: 99;
+}
+.attribution p {
+  visibility: hidden;
+	position: fixed;
+	bottom: 4.5rem;
+	right: 5rem;
+	width: 13rem;
+	padding: .3rem 1rem;
+	border-radius: 1rem 1rem 0;
+	background-color: var(--white);
+	font-size: .9rem;
+	z-index: 999;
+	box-shadow: 0 0 .4rem var(--rgba-darkblue);
+  transform: rotateX(90deg);
+  transition: .8s cubic-bezier(.06, .8, .1, 1);
+}
+.attribution:hover p {
+  visibility: visible;
+  transform: rotateX(0);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media screen and (max-width: 800px) {
+  body {
+    padding: 5rem 1rem;
+    height: auto;
+  }
+	.attribution {
+    position: relative;
+		height: 3.5rem;
+		width: 3.5rem;
+    margin-top: 6rem;
+    box-shadow: 0 0 .4rem var(--rgba-darkblue);
+	}
+	.attribution p {
+    position: relative;
+		visibility: visible;
+		border-radius: 1rem;
+		transform: rotateX(0);
+    margin-top: 8rem;
+	}
 }

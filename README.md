@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# QR Code Generator component - Frontend Mentor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This challenge was to build the QR Code component, but it has become something more complex than a simple component!  
+Inspired by another project, I also wanted to add features to this challenge:
+- On load, it shows the default basic QR Code
+- Added a form that allows the user to enter a website URL to generate a QR Code for it
+- Dynamically update the QR Code as you type the URL
+- Dynamically update the color and background of the QR Code based on the customization input entered by the user
+- When the form is sent, the `.png` of the generated QR Code is downloaded 
+  
+This is a evolved solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Screenshot
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![QRcode Generator](./screenshot.webp)
 
-### `npm test`
+### Links
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Solution URL: [github](https://github.com/denielden/react-qrcode-generator)
+- Live Site URL: [live site](https://denielden.github.io/react-qrcode-generator)
 
-### `npm run build`
+## My process
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Built with
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [QRCode.react](https://www.npmjs.com/package/qrcode.react) - For QR Code
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### What I learned
 
-### `npm run eject`
+With this challenge I had the opportunity to learn and deepen:
+- the use and manipulation of `QRCode.react`
+- the correct use of `Refs` in react
+- how the html `canvas` element works behind the scenes
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+I am eager to further evolve this project and learn much more!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Continued development
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Add new features:
+- Insert custom image inside the QR Code
+- Choose the format of the image to download 
+- Connect with serverless database
+- SignIn/Login
+- Save the QR Code generated
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Useful resources
 
-## Learn More
+- [React Refs](https://it.reactjs.org/docs/refs-and-the-dom.html)
+- [QRCode.react](https://www.npmjs.com/package/qrcode.react)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Website - [denielden](https://denielden.github.io)
+- Frontend Mentor - [@denielden](https://www.frontendmentor.io/profile/denielden)
 
-### Code Splitting
+  
+Special thanks to @Remus432, he have really inspired me to create this dinamic component!  
+Thank you for taking the time to check out my project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## **Have fun building!** 🚀
