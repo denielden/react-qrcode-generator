@@ -9,7 +9,7 @@ const App = () => {
   const [url, setUrl] = useState(''),
         handleGenerate = e => setUrl(e.target.value);
 
-  const [qrColor, setQrColor] = useState('#fff'),
+  const [qrColor, setQrColor] = useState('#ffffff'),
         [qrBgColor, setQrBgColor] = useState('#2c7dfa');
   
   const handleQrCustom = e => {
@@ -20,7 +20,7 @@ const App = () => {
 
   const handleQrReset = () => {
     setUrl('');
-    setQrColor('#fff');
+    setQrColor('#ffffff');
     setQrBgColor('#2c7dfa');
   }
   
