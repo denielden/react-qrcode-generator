@@ -28,9 +28,9 @@ const FormQr = props => {
         <CustomizeQR label={'background'} id={'qrBgColor'} customColor={props.qrBgColor} handleQrCustom={props.handleQrCustom} />
 
         <button type="submit">
-          <img src={reactLogo} className="spin-animation" loading="lazy" alt="React logo" />
-          <h2>Download</h2>
-          <img src={qrIcon} loading="lazy" alt="Qr code icon" />
+          <img src={reactLogo} className="spin-animation" alt="React logo" />
+          <span>Download</span>
+          <img src={qrIcon} alt="Qr code icon" />
         </button>
       </form>
    );
