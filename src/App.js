@@ -11,11 +11,16 @@ const App = () => {
 
   const [qrColor, setQrColor] = useState('#ffffff'),
         [qrBgColor, setQrBgColor] = useState('#2c7dfa');
-  
+  /*
   const handleQrCustom = e => {
     const inputId = e.target.id,
           newColor = e.target.value;
     inputId === 'qrColor' ? setQrColor(newColor) : setQrBgColor(newColor);
+  };
+  */
+  const handleQrCustom = color => {
+    const newColor = color.hex;
+    setQrColor(newColor);
   };
 
   const handleQrReset = () => {

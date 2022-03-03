@@ -1,12 +1,29 @@
-const CustomizeQR = props => {
-   return (
+import { useState } from 'react';
+import { SketchPicker } from 'react-color'
+
+const CustomizeQR = ({ id, label, customColor, handleQrCustom }) => {
+   const [showPicker, setShowPicker] = useState(false),
+         handleShowPicker = ()=> setShowPicker(!showPicker);
+
+   return(
       <div>
-         <input id={props.id} name={props.id}
-            type="color"
-            value={props.customColor}
-            onChange={props.handleQrCustom}
+         <input
+            id={id}
+            name={id}
+            type="button"
+            style={{background: customColor}}
+            onClick={handleShowPicker}
          />
-         <label htmlFor={props.id}>Customize {props.label}</label>
+         <label htmlFor={id}>Customize {label}</label>
+
+         {showPicker &&
+            <SketchPicker
+               className={id}
+               presetColors={['#000000', '#FFFFFF']}
+               color={customColor}
+               onChange={handleQrCustom}
+            />
+         }
       </div>
    );
 }

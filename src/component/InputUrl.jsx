@@ -1,9 +1,9 @@
-const InputUrl = props => {
+const InputUrl = ({ url, handleGenerate }) => {
    return (
       <input id="url" name="url"
          type="url"
-         value={props.url}
-         onChange={props.handleGenerate}
+         value={url}
+         onChange={handleGenerate}
          placeholder="Add URL for QR code generation"
          required
       />
