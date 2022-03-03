@@ -1,12 +1,12 @@
 import QrCode from 'qrcode.react';
 
-const QRCode = props => {
+const QRCode = ({ url, bgColor, fgColor}) => {
    return (
       <QrCode
          size={250}
-         value={props.url}
-         bgColor={props.bgColor}
-         fgColor={props.fgColor}
+         value={url}
+         bgColor={bgColor}
+         fgColor={fgColor}
          level='H'
          includeMargin
       />
