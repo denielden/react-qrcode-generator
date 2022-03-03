@@ -5,7 +5,7 @@ const CustomizeQR = ({ id, label, customColor, handleQrCustom }) => {
    const [showPicker, setShowPicker] = useState(false),
          handleShowPicker = ()=> setShowPicker(!showPicker);
 
-   return (
+   return(
       <div>
          <input
             id={id}
